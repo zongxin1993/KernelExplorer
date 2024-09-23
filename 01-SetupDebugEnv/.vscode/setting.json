@@ -1,0 +1,23 @@
+{
+    "C_Cpp.default.intelliSenseMode": "linux-gcc-arm",
+    "C_Cpp.intelliSenseEngine": "Disabled",
+    "clangd.path": "clangd",
+    "clangd.arguments": [
+        "--log=verbose",
+        "--compile-commands-dir=${workspaceFolder}/build",
+        "--completion-parse=auto", 
+        "--completion-style=detailed", 
+        "--all-scopes-completion",
+        "--header-insertion=iwyu",
+        "--clang-tidy",
+        "--clang-tidy-checks=performance-*, bugprone-*, misc-*, google-*, modernize-*, readability-*, portability-*",
+        "--function-arg-placeholders=true",
+        "--pch-storage=memory", 
+        "--pretty",
+        "-j=12"
+    ],
+    "clangd.onConfigChanged": "restart",
+    "clangd.serverCompletionRanking": true,
+    "clangd.detectExtensionConflicts": true,
+    "editor.suggest.snippetsPreventQuickSuggestions": true
+}
