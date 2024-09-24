@@ -1,0 +1,33 @@
+menu "Zongxin Test Menu"
+
+config FEATURE_A
+    bool "Feature A"
+    default y # 默认启用
+    help
+        This is the help text for Feature A.
+
+config FEATURE_B
+    bool "Feature B"
+    depends on FEATURE_A # 只有当 FEATURE_A 启用时才可见
+    help
+        This is the help text for Feature B.
+
+if FEATURE_A
+    config FEATURE_C
+        bool "Feature C"
+        default y # 默认启用
+endif
+
+if ! FEATURE_A
+    config FEATURE_D
+        bool "Feature D"
+endif
+
+menu "Advanced Features" # 子菜单
+    config FEATURE_E
+        bool "Feature E"
+    config FEATURE_F # M or Y
+        tristate "Feature F"
+endmenu
+
+endmenu

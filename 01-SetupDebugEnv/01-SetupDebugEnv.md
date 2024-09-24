@@ -7,13 +7,13 @@
 wget https://busybox.net/downloads/busybox-1.36.1.tar.bz2
 tar -xvf busybox-1.36.1.tar.bz2
 cd busybox-1.36.1/
-make menuconfig
+make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- menuconfig
 
 # 把busybox配置为静态编译，找到Settings —>，enter进入子目录，找到并选择
 # [*] Build static binary (no shared libs)
 # 选中后退出保存编译
 
-make -j
+make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- -j
 ```
 
 ![Screenshot-1.png](../_resources/Screenshot-1.png)
@@ -35,7 +35,7 @@ cd busybox-1.36.1/
 # 使用mount命令将rootfs.img挂载到fs目录，编译busybox并写入fs目录中。
 mkdir fs
 sudo mount -t ext4 -o loop rootfs.img ./fs
-sudo make install CONFIG_PREFIX=./fs
+sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- install CONFIG_PREFIX=./fs
 ```
 
 ![Screenshot-6.png](../_resources/Screenshot-6.png)
