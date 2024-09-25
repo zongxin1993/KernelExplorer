@@ -1,5 +1,5 @@
 # KernelExplorer
-![LOGO](_resources/Screenshot-17.png)
+![LOGO](_resources/Logo.png)
 
 
 主要记录、整理一下自己学习Linux kernel (Arm64)知识过程中的自我积累。
@@ -19,4 +19,5 @@ sudo apt-get install libncurses-dev qemu qemu-system gdb-multiarch gcc-aarch64-l
 
 ### 基础相关
  - [基础交叉编译及Debug环境](01-SetupDebugEnv/01-SetupDebugEnv.md)
- - [Linux Kernel 配置及构建流程](02-LinuxKerneConfigurationAndCompilation/02-LinuxKerneConfigurationAndCompilation.md)
+ - [Linux Kernel 配置及构建流程](02-ConfigurationAndCompilation/02-ConfigurationAndCompilation.md)
+ - [vmlinux 文件详解](03-CompilationProduct/03-CompilationProduct.md)

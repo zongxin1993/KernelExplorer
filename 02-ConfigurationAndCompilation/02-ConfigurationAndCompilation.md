@@ -68,12 +68,12 @@ Kconfig 的语法相对比较简单，主要由8个元素组成：
 - 提示：用于在配置菜单中显示提示信息
 - 默认值：配置项设置默认值。
 
-下例为mm中的Kconfig 文件示意：
+下例为mm中的Kconfig 文件示意：  
 ![Screenshot-21.png](../_resources/Screenshot-21.png)
 
 ### Kconfig Demo
 
-我们在Kernel 工目录下新家一个目录，自己编写一个Kconfig
+我们在Kernel 工目录下新建一个目录，自己编写一个Kconfig
 ```
 cd ${KERNEL_SOURCE}
 mkdir zongTest
@@ -158,7 +158,7 @@ endmenu
 
 其中 config下的文件是只有文件名字的空白文件，autconfig,h 是编译时候控制kernel 代码中宏文件使用的FLAG
 
-`Kbuild` 的本质是一个特殊的，它是用来构建 Linux 内核及其模块的定制化。`Kbuild`系统使用了`Makefile`的语法，并添加了一些特定的约定和宏来简化内核构建过程。
+`Kbuild` 的本质是一个特殊的Makefile，它是用来构建 Linux 内核及其模块的定制化。`Kbuild`系统使用了`Makefile`的语法，并添加了一些特定的约定和宏来简化内核构建过程。
 
 **Kbuild** 中加入了一下特殊的宏和条件判断，用来处理简化复杂的kernel 编译条件，比方说：`obj-m` 和`obj-y`
 
@@ -223,7 +223,7 @@ endmenu
 4.  在kernel 启动初始化函数中调用测试函数，查看打印信息，在`init/main.c`文件中添加头文件引用，在`kernel_init`函数中引用测试函数，如下图；![Screenshot-30.png](../_resources/Screenshot-30.png)
     
 5.  重新编译运行，`bear -- make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- O=build -j30`，结果如下![Screenshot-31.png](../_resources/Screenshot-31.png)
-6.  在menuconfig时候，使能不同的feature，可以控制编译的source文件及代码分支，也是kernel “多态”的一种体现![Screenshot-32.png](../_resources/Screenshot-32.png)
+6.  在menuconfig时候，使能不同的feature，可以控制编译的source文件及代码分支，也是kernel “多态”的一种体现!，如下图就勾选了FEATURE_D的结果 ![Screenshot-32.png](../_resources/Screenshot-32.png)
 
 &nbsp;
 
