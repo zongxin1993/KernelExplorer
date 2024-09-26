@@ -21,3 +21,4 @@ sudo apt-get install libncurses-dev qemu qemu-system gdb-multiarch gcc-aarch64-l
  - [基础交叉编译及Debug环境](01-SetupDebugEnv/01-SetupDebugEnv.md)
  - [Linux Kernel 配置及构建流程](02-ConfigurationAndCompilation/02-ConfigurationAndCompilation.md)
  - [vmlinux 文件详解](03-CompilationProduct/03-CompilationProduct.md)
+ - [抽丝剥茧kernel入口函数](04-VmlinuxLinkerScript/04-VmlinuxLinkerScript.md)

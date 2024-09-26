@@ -220,10 +220,13 @@ endmenu
     }
     ```
     
-4.  在kernel 启动初始化函数中调用测试函数，查看打印信息，在`init/main.c`文件中添加头文件引用，在`kernel_init`函数中引用测试函数，如下图；![Screenshot-30.png](../_resources/Screenshot-30.png)
+4.  在kernel 启动初始化函数中调用测试函数，查看打印信息，在`init/main.c`文件中添加头文件引用，在`kernel_init`函数中引用测试函数，如下图；
+![Screenshot-30.png](../_resources/Screenshot-30.png)
     
-5.  重新编译运行，`bear -- make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- O=build -j30`，结果如下![Screenshot-31.png](../_resources/Screenshot-31.png)
-6.  在menuconfig时候，使能不同的feature，可以控制编译的source文件及代码分支，也是kernel “多态”的一种体现!，如下图就勾选了FEATURE_D的结果 ![Screenshot-32.png](../_resources/Screenshot-32.png)
+5.  重新编译运行，`bear -- make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- O=build -j30`，结果如下
+![Screenshot-31.png](../_resources/Screenshot-31.png)
+6.  在menuconfig时候，使能不同的feature，可以控制编译的source文件及代码分支，也是kernel “多态”的一种体现!，如下图就勾选了FEATURE_D的结果 
+![Screenshot-32.png](../_resources/Screenshot-32.png)
 
 &nbsp;
 
