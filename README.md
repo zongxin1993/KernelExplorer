@@ -2,7 +2,7 @@
 ![LOGO](_resources/Logo.png)
 
 
-主要记录、整理一下自己学习Linux kernel (Arm64)知识过程中的自我积累。
+主要记录、整理一下自己学习Linux kernel (Arm64 嵌入式方向)知识过程中的自我积累。
 
 ## 主要参考文档
  - https://docs.kernel.org/
@@ -22,3 +22,4 @@ sudo apt-get install libncurses-dev qemu qemu-system gdb-multiarch gcc-aarch64-l
  - [Linux Kernel 配置及构建流程](02-ConfigurationAndCompilation/02-ConfigurationAndCompilation.md)
  - [vmlinux 文件详解](03-CompilationProduct/03-CompilationProduct.md)
  - [抽丝剥茧kernel入口函数](04-VmlinuxLinkerScript/04-VmlinuxLinkerScript.md)
+ - [U-boot 启动流程概要](05-Bootloader(u-boot)/05-Bootloader(u-boot).md)
