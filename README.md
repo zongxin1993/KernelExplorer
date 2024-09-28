@@ -23,3 +23,4 @@ sudo apt-get install libncurses-dev qemu qemu-system gdb-multiarch gcc-aarch64-l
  - [vmlinux 文件详解](03-CompilationProduct/03-CompilationProduct.md)
  - [抽丝剥茧kernel入口函数](04-VmlinuxLinkerScript/04-VmlinuxLinkerScript.md)
  - [U-boot 启动流程概要](05-Bootloader(u-boot)/05-Bootloader(u-boot).md)
+ - [U-boot 中的代码重定位](06-UbootRelocateCode/06-UbootRelocateCode.md)
