@@ -24,3 +24,6 @@ sudo apt-get install libncurses-dev qemu qemu-system gdb-multiarch gcc-aarch64-l
  - [抽丝剥茧kernel入口函数](04-VmlinuxLinkerScript/04-VmlinuxLinkerScript.md)
  - [U-boot 启动流程概要](05-Bootloader(u-boot)/05-Bootloader(u-boot).md)
  - [U-boot 中的代码重定位](06-UbootRelocateCode/06-UbootRelocateCode.md)
+
+### Arm实战--如何适配OrangePi-zero-3
+ - [OrangePi-zero-3 的UBoot 构建](07-BuildOrangePiZero3Uboot/07-BuildOrangePiZero3Uboot.md)
